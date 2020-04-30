@@ -1,0 +1,26 @@
+
+
+<div class="container login-container">
+    <div class="row">
+        <div class="login-form-1">
+            
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Transaction Id</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Date and Time</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let trans of transactions;">
+                    <td>{{trans.transactionId}}</td>
+                    <td>{{trans.type}}</td>
+                    <td>{{trans.amount}}</td>
+                    <td>{{trans.localDateTime}}</td>
+                </tbody>
+              </table>            
+        </div>
+    </div>
+</div>
+

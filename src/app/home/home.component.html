@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#"><b>Wallet</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" style="color: black; "routerLink="/">Profile<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" style="color: black; " routerLink="/deposit">Deposit</a>
+        <a class="nav-item nav-link" style="color: black; "routerLink="/withdraw">Withdraw</a>
+        <a class="nav-item nav-link" style="color: black; " routerLink="/fundtransfer">Fund Transfer</a>
+        <a class="nav-item nav-link" style="color: black; " routerLink="/transactions">Show Transaction</a>
+        <a class="nav-item nav-link" style="color: black; " (click)="logoutAction()">Logout</a>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>

@@ -1,0 +1,38 @@
+
+<form [formGroup]="myForm" #f="ngForm">
+    <div class="container login-container">
+        <div class="row">
+            <div class="col-md-6 login-form-1">
+                
+                <div class="form-group" >
+                    <input type="number" formControlName="mobileNumber" [(ngModel)]='signupRequest.mobileNumber' placeholder="Enter your mobile number *"
+                    class="form-control"  [class.is-invalid]="myForm.get('mobileNumber').invalid && myForm.get('mobileNumber').touched">
+                    <small [class.d-none]="myForm.get('mobileNumber').valid || myForm.get('mobileNumber').untouched" class="text-danger">Incorrect Mobile Number</small>
+                </div>
+                <div class="form-group" >
+                    <input type="text" formControlName="name" [(ngModel)]='signupRequest.name' placeholder="Enter the your Name*"
+                     class="form-control"  [class.is-invalid]="myForm.get('name').invalid && myForm.get('name').touched">
+                    <small [class.d-none]="myForm.get('name').valid || myForm.get('name').untouched" class="text-danger">Name is required</small>
+                </div>
+                <div class="form-group" >
+                    <input type="password" formControlName="password" [(ngModel)]='signupRequest.password' placeholder="Enter your Password *"
+                    class="form-control"  [class.is-invalid]="myForm.get('password').invalid && myForm.get('password').touched">
+                    <small [class.d-none]="myForm.get('password').valid || myForm.get('password').untouched" class="text-danger">Password is required</small>
+                </div>
+                <div class="form-group" >
+                    <input type="email" formControlName="emailId" [(ngModel)]='signupRequest.emailId' placeholder="Enter the your Email ID *"
+                     class="form-control"  [class.is-invalid]="myForm.get('emailId').invalid && myForm.get('emailId').touched">
+                    <small [class.d-none]="myForm.get('emailId').valid || myForm.get('emailId').untouched" class="text-danger">Incorrect Email Id </small>
+                </div>
+                        
+                    <div class="form-group">
+                        <button  type="submit" class="btnSubmit" [disabled]="f.form.invalid"  (click)="signupAction()">Register</button>
+                    </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    </form>
+    
+
