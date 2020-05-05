@@ -132,7 +132,7 @@ public class WalletService {
 		Comparator<Transaction> comp=(b1,b2)->{
 				 LocalDateTime ldt1=b1.getLocalDateTime();
 				 LocalDateTime ldt2=b2.getLocalDateTime();
-				 int comparison=ldt1.compareTo(ldt2);
+				 int comparison=ldt2.compareTo(ldt1);
 				 return comparison;
 		};
 			Collections.sort(trans,comp);

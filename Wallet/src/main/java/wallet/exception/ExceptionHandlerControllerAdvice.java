@@ -32,6 +32,7 @@ public class ExceptionHandlerControllerAdvice {
 		ExceptionResponse error = new ExceptionResponse();
 		error.setErrorMessage(exception.getMessage());
 		error.setRequestedURI(request.getRequestURI());
+		error.setStatus(HttpStatus.BAD_REQUEST);
 		return error;
 	}
 	
@@ -43,6 +44,7 @@ public class ExceptionHandlerControllerAdvice {
 		ExceptionResponse error = new ExceptionResponse();
 		error.setErrorMessage(exception.getMessage());
 		error.setRequestedURI(request.getRequestURI());
+		error.setStatus(HttpStatus.BAD_REQUEST);
 		return error;
 	}
 	

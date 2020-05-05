@@ -49,7 +49,6 @@ public class CustomerService {
 		  wallet.setLocaldate(LocalDate.now());
 		  wallet.setCustomer(customer);
 		
-			
 		  	customerRepository.save(customer);
 			walletRepository.save(wallet);
 			customer.setWallet(wallet);
