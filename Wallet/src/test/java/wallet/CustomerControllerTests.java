@@ -53,7 +53,7 @@ class CustomerControllerTests {
 	
 		  RestTemplate restTemplate = new RestTemplate();
 		  String baseUrl = "http://localhost:"+randomServerPort+"/customer/signup";
-	      URI uri = new URI(baseUrl);  
+	          URI uri = new URI(baseUrl);  
 	      
 		  SignupRequest request=new  SignupRequest(); 
 		  request.setMobileNumber(new Long("1234567890"));
@@ -78,10 +78,10 @@ class CustomerControllerTests {
 		
 		  RestTemplate restTemplate = new RestTemplate();
 		  String baseUrl = "http://localhost:"+randomServerPort+"/customer/signup";
-	      URI uri = new URI(baseUrl);
+	          URI uri = new URI(baseUrl);
 	      
 		  
-	      SignupRequest request=new  SignupRequest(); 
+	      	  SignupRequest request=new  SignupRequest(); 
 		  request.setMobileNumber(new Long("9999988888"));
 		  request.setEmailId("test@gmail.com"); 
 		  request.setName("test");
@@ -107,7 +107,7 @@ class CustomerControllerTests {
 		
 		  RestTemplate restTemplate = new RestTemplate();
 		  String baseUrl = "http://localhost:"+randomServerPort+"/customer/login";
-	      URI uri = new URI(baseUrl);  
+	          URI uri = new URI(baseUrl);  
 	      
 		  LoginRequest request=new LoginRequest(); 
 		  request.setMobileNumber(new Long("9999988888"));
@@ -152,7 +152,7 @@ class CustomerControllerTests {
 		
 		  RestTemplate restTemplate = new RestTemplate();
 		  String baseUrl = "http://localhost:"+randomServerPort+"/customer/login";
-	      URI uri = new URI(baseUrl);  
+	          URI uri = new URI(baseUrl);  
 	      
 		  LoginRequest request=new LoginRequest(); 
 		  request.setMobileNumber(new Long("12345678"));
